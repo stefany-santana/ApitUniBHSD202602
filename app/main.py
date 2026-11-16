@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
-from models import RegistroModel
-from database import init_db, get_db_connection
+from app.schemas.models import RegistroModel
+from app.core.database import init_db, get_db_connection
 
 app = FastAPI(
     title="Projeto A4 - Arquitetura em Camadas",
